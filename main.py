@@ -21,4 +21,4 @@ async def retrieve_data(ctx):
   info = ret_req()
   await ctx.channel.send(info)
 
-client.run(os.environ['bruh'])
+client.run(os.environ['DISCORD_KEY'])

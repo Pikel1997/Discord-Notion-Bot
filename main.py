@@ -18,7 +18,12 @@ async def add_item_to_list(ctx, *msg):
 
 @client.command(name="getAll")
 async def retrieve_data(ctx):
-  info = ret_req()
-  await ctx.channel.send(info)
+  l = ret_req()
+  await ctx.channel.send(l)
 
-client.run(os.environ['DISCORD_KEY'])
+# @client.command(name="delAll")
+# async def truncate(ctx):
+#   trunc()
+#   await ctx.channel.send("Database Truncated")
+
+client.run(os.environ['bruh'])

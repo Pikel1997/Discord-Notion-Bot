@@ -24,8 +24,8 @@ def ret_req():
 
   payload={}
   headers = {
-    'Notion-Version': '2021-08-16',
-    'Authorization': f"Bearer {NOTION_KEY}"
+    'Authorization': f"Bearer {NOTION_KEY}",
+    'Notion-Version': '2021-08-16'
   }
 
   response = requests.request("POST", url, headers=headers, data=payload)

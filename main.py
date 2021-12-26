@@ -18,8 +18,8 @@ async def add_item_to_list(ctx, *msg):
 
 @client.command(name="getAll")
 async def retrieve_data(ctx):
-  l = ret_req()
-  await ctx.channel.send(l)
+  emp_l = ret_req()
+  await ctx.channel.send(emp_l)
 
 # @client.command(name="delAll")
 # async def truncate(ctx):
